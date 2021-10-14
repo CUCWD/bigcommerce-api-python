@@ -14,7 +14,7 @@ setup(
     version=VERSION,
 
     packages=find_packages(),
-    install_requires=['requests>=2.25.1', 'pyjwt>=2.0.1'],
+    install_requires=['requests>=2.25.1', 'pyjwt>=1.5.2'],
 
     url='https://github.com/bigcommerce/bigcommerce-api-python',
     download_url='https://pypi.python.org/packages/source/b/bigcommerce/bigcommerce-{}.tar.gz'.format(VERSION),
