@@ -6,7 +6,7 @@ from jwt import encode
 
 class CustomerLoginTokens(object):
     @classmethod
-    def create(cls, client, customer_id: int, redirect_url=None, request_ip=None, iat_time=None, channel_id: int = 1):
+    def create(cls, client, customer_id, redirect_url=None, request_ip=None, iat_time=None, channel_id=1):
 
         # Get the client_secret needed to sign tokens from the environment
         # Intended to play nice with the Python Hello World sample app
@@ -45,7 +45,7 @@ class CustomerLoginTokens(object):
         return encode(payload, client_secret, algorithm='HS256')
 
     @classmethod
-    def create_url(cls, client, customer_id, redirect_url=None, request_ip=None, use_bc_time=False, channel_id:int=1):
+    def create_url(cls, client, customer_id, redirect_url=None, request_ip=None, use_bc_time=False, channel_id=1):
         secure_url = client.Store.all()['secure_url']
         iat_time = None
         if use_bc_time:
