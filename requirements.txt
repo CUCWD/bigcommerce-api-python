@@ -4,5 +4,6 @@ coverage==5.5
 mock==4.0.3
 nose==1.3.7
 nose-cov==1.6
+charset-normalizer==2.0.7
 requests==2.25.1
-pyjwt>=1.5.2 # 2.1.0 – Using version in Open edX (https://discuss.openedx.org/t/pulling-in-edx-src-repositories-throws-error-with-python-package-dependencies-for-the-lms/5914) 
+PyJWT==2.2.0 # 2.1.0 – Using version in Open edX (https://discuss.openedx.org/t/pulling-in-edx-src-repositories-throws-error-with-python-package-dependencies-for-the-lms/5914) 
