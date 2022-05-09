@@ -7,14 +7,14 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 
-VERSION = '0.22.2'
+VERSION = '0.22.2-maple.1'
 
 setup(
     name='bigcommerce',
     version=VERSION,
 
     packages=find_packages(),
-    install_requires=['requests>=2.25.1', 'pyjwt>=1.5.2'],
+    install_requires=['requests>=2.25.1', 'pyjwt>=1.6.3'],
 
     url='https://github.com/bigcommerce/bigcommerce-api-python',
     download_url='https://pypi.python.org/packages/source/b/bigcommerce/bigcommerce-{}.tar.gz'.format(VERSION),
